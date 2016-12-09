@@ -1,4 +1,4 @@
-package info.billon;
+package com.example;
 
 import javax.annotation.processing.*;
 import javax.lang.model.SourceVersion;
@@ -11,7 +11,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 
-@SupportedAnnotationTypes("info.billon.CopyMethods")
+@SupportedAnnotationTypes("com.example.CopyMethods")
 public class MyProcessor extends AbstractProcessor {
     private Messager messager;
 
