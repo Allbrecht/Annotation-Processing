@@ -2,7 +2,5 @@
 .idea/
 build/
 gradle/
-gradlew
-gradlew.bat
 out/
 src/main/java/META-INF/MANIFEST.MF
