@@ -1,4 +1,4 @@
-package info.billon;
+package com.example;
 
 import javax.annotation.processing.*;
 import javax.lang.model.SourceVersion;
