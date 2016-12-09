@@ -14,6 +14,9 @@ import java.util.Set;
 @SupportedAnnotationTypes("info.billon.CopyMethods")
 public class MyProcessor extends AbstractProcessor {
     private Messager messager;
+
+/*    public MyProcessor() {
+    }*/
 /*    @Override
     public Set<String> getSupportedAnnotationTypes() {
         Set<String> set = new HashSet<>();
@@ -25,6 +28,11 @@ public class MyProcessor extends AbstractProcessor {
     @Override
     public SourceVersion getSupportedSourceVersion() {
         return SourceVersion.latestSupported();
+    }
+
+    @Override
+    public synchronized void init(ProcessingEnvironment processingEnv) {
+        super.init(processingEnv);
     }
 
 
@@ -69,11 +77,11 @@ public class MyProcessor extends AbstractProcessor {
         return true;*/
 
     }
-    private void error(Element e, String msg, Object... args) {
+  /*  private void error(Element e, String msg, Object... args) {
         messager.printMessage(
                 Diagnostic.Kind.ERROR,
                 String.format(msg, args),
                 e);
-    }
+    }*/
 
 }
